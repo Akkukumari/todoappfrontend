@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import "./App.css";
+import TodoHome from "./Components/TodoHome";
+import { useSelector } from "react-redux";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
+  const { isAuth } = useSelector((state) => state.authReducer);
+  console.log("isAuth", isAuth);
+
+  useEffect(() => {
+    if(!isAuth) {
+      navigate("/login");
+    }
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TodoHome />
     </div>
   );
 }

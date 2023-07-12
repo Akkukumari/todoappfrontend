@@ -1,38 +1,381 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebarBody{
+  /* border: 1px solid red; */
+  width: 20%;
+  height: 670px;
+  background-color: rgba(227, 227, 227, 0.923);
+  border-radius: 12px;
+ margin-left: 15px;
+ margin-top: 15px;
+ margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.upperText{
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search{
+  /* padding-left: 10px; */
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width: 240px;
+}
+
+.task{
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  padding-left:10px;
+}
+
+.allTask{
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  padding-left:20px;
+}
+
+.upcom, .tod, .cale{
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.upcoming, .today, .calendar, .signout{
+  padding-right: 8px;
+}
+
+.today, .upcoming{
+text-decoration: none;
+}
+
+.sign{
+  padding-top: 280px;
+}
+
+.allTasks{
+text-align: left;
+margin-left: 20px;
+}
+.mainbody{
+  /* border: 1px solid blue; */
+  background-color: #7bbbcc;
+  width: 70%;
+  height: 700px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px;
   display: flex;
-  flex-direction: column;
+}
+
+.todayy{
+  display: flex;
+  gap: 20px;
+  font-size: 40px;
+  font-weight: 800;
+  font-style: inherit;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.addInput{
+margin-left: 10px;
+}
+
+.add input{
+  padding-left: 30px;
+    height: 40px;
+    width: 400px;
+    padding-top: 0px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.246);
+}
+
+.add svg {
+  position: absolute;
+  padding: 12px 12px;
+}
+
+.task_content {
+  padding: 10px 0px 20px 10px;
+}
+
+.task_card{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(208, 204, 204);
+  border-radius: 6px;
+  margin: 5px 0px;
+}
+
+.task_card_title {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.task_body {
+  display: flex;
+  gap: 20px;
+}
+
+.taskDetail{
+  /* border: 1px solid blueviolet; */
+  /* width: 60%; */
+  min-width: 560px;
+  display: block;
+  height: 670px;
+  background-color: rgba(227, 227, 227, 0.923);
+  border-radius: 12px;
+ margin-left: 15px;
+ margin-top: 15px;
+ margin-bottom: 15px;
+}
+
+.tasky{
+  text-align: left;
+  margin-left: 20px;
+}
+.subTask{
+  text-align: left;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.desc{
+  width: 50%;
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 10px;
+   text-align: start;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.246);
+}
+
+.listSection{
+  /* display: flex; */
+  gap: 10px;
+}
+
+.list{
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.select{
+  margin-left: 20px;
+  width: 15%;
+  margin-top: 5px;
+  /* margin-bottom: 30px; */
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.246);
+}
+
+.endSection{
+  display: flex;
+  gap: 15px;
+  margin-top: 255px;
+  margin-left: 150px;
+  margin-right: 150px;
+  width: 80%;
+  height: 40px;
+}
+
+.button{
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: black;
   color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.allTask a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:active:active {
+  color: magenta;
+  text-decoration: underline;
+}
+
+.login-background{
+  border: 1px solid rgba(9, 162, 162, 0.303);
+  width: 50%;
+  height: 500px;
+  margin: auto;
+  align-items: center;
+  margin-top: 200px;
+  border-radius: 18px;
+  background-color:rgba(9, 162, 162, 0.303)
+}
+
+.mainBody{
+  /* border: 1px solid red; */
+  width: 70%;
+  height: 350px;
+  margin: auto;
+  margin-top: 35px;
+  padding-top: 80px;
+  border-radius: 16px;
+  background-color:rgb(102, 102, 174)
+}
+.login{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  /* padding-top: 2px; */
+margin-top: 3px;
+}
+
+.inputBox{
+  width: 50%;
+  height: 90px;
+  margin: auto;
+}
+
+.email, .password{
+  width: 90%;
+  height: 30px;
+  margin: auto;
+}
+
+.remeber{
+  width: 40%;
+  height: 30px;
+  margin: auto;
+  margin-left: 50px;
+}
+.emailInfo, .passwordInfo{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.rememberInfo{
+  /* text-align: center; */
+  font-size: 18px;
+  font-weight: 500;
+   margin-right: 150px;
+  margin-left:30px
+}
+
+.rememberme{
+  display: flex;
+  margin: auto;
+  gap: 20px;
+}
+
+.loginn{
+  width: 16%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 40%; */
+  height: 30px;
+  margin: auto;
+  margin-left: 280px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+
+.createAccountBody{
+  width: 60%;
+  height: 600px;
+  margin: auto;
+  margin-top: 200px;
+  border: 1px solid rgb(2, 2, 21);
+  border-radius: 18px;
+background-color:rgb(18, 18, 78)
+}
+
+.maincreateBody{
+  width: 60%;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  /* border: 1px solid black; */
+  border-radius: 16px;
+  background-color:rgba(241, 235, 235, 0.917)
+}
+
+.createAccount{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 30px;
+/* margin-top: 40px; */
+}
+
+.name{
+  width: 40%;
+  height: 30px;
+  margin: auto;
+  margin-left: 150px;
+  border: none;
+  outline: none;
+}
+
+.yourName{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.registerNow{
+
+}
+.register{
+  width: 16%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 40%; */
+  height: 30px;
+  margin: auto;
+  margin-left: 280px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.already{
+  text-align: center;
+  font-size: 20px;
 }
