@@ -65,8 +65,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-![Screenshot (130)](https://github.com/Akkukumari/todoappfrontend/assets/112841772/4c54a698-7ca3-440d-b962-85818c4b17b2)
+
 
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot (130)](https://github.com/Akkukumari/todoappfrontend/assets/112841772/4c54a698-7ca3-440d-b962-85818c4b17b2)
+![Screenshot (131)](https://github.com/Akkukumari/todoappfrontend/assets/112841772/4ad4c159-c4be-4084-b413-fc7d08be6976)
+![Screenshot (135)](https://github.com/Akkukumari/todoappfrontend/assets/112841772/39c92453-50e3-441c-8110-092d6872561d)
+![Screenshot (132)](https://github.com/Akkukumari/todoappfrontend/assets/112841772/91bc16df-3ae3-4b07-bee3-618523e98e3a)
+![Screenshot (134)](https://github.com/Akkukumari/todoappfrontend/assets/112841772/49671000-0604-4b0c-97dd-6a1d2723d209)
